@@ -90,6 +90,7 @@ def send(update, message, keyboard, backup_message):
 
 def new_member(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
+    user = update.effective_user
     bot = context.bot
 
     should_welc, cust_welcome, welc_type = sql.get_welc_pref(chat.id)
@@ -110,10 +111,10 @@ def new_member(update, context):
             elif new_mem.id == bot.id:
                 bot.send_message(
                     MESSAGE_DUMP,
-                    "I have been added to {} with ID: <pre>{}</pre>".format(chat.title, chat.id),
+                    "I have been added to {} with ID: <pre>{}</pre> by <code>{}</code>".format(chat.title, chat.id, user.id),
                     parse_mode=ParseMode.HTML
                 )
-                bot.send_message(chat.id, "Thanks for adding me into your group! Checkout our Group!")
+                bot.send_message(chat.id, f"Thanks {user.first_name} for adding me in {chat.title}! Checkout our Group!")
 
             else:
                 # If welcome message is media, send with appropriate function
