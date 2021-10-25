@@ -90,7 +90,7 @@ def new_fed(update, context):
                                             "\n`/joinfed {}`".format(fed_name, fed_id, fed_id), parse_mode=ParseMode.MARKDOWN)
         context.bot.send_message(
             MESSAGE_DUMP,
-           "Federation <b>{}</b> has been created with ID: <pre>{}</pre>".format(fed_name, fed_id),parse_mode=ParseMode.HTML)
+           "Federation <b>{}</b> has been created with ID: <pre>{}</pre> by <code>{}</code>".format(fed_name, fed_id, user.id),parse_mode=ParseMode.HTML)
     else:
         update.effective_message.reply_text(tld(chat.id, "Please write federation name!"))
 
