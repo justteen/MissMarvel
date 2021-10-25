@@ -1,10 +1,4 @@
-#Copyright-2021 // Python Telegram Bot 13.6 Updated by @noobanon
-#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
-#Everyone is permitted to copy and distribute verbatim copies
-#of this license document, but changing it is not allowed.
-#The GNGeneral Public License is a free, copyleft license for
-#software and other kinds of works.
-#PTB13 Updated by @noobanon
+#okokokokokokok
 
 
 import telegram.ext as tg
