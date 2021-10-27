@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/marvel
-RUN git clone https://github.com/noobanon/MissMarvel /root/MissMarvel
-WORKDIR /root/marvel
+# Copy Python Requirements to /root/sexo
+RUN git clone https://github.com/CRiMiNaL786/MissSexo /root/MissSexo
+WORKDIR /root/sexo
 
-#Copy config file to /root/MissMarvel/marvel
-COPY ./marvel/sample_config.py ./marvel/config.py* /root/MissMarvel/Marvel/
+#Copy config file to /root/MissSexo/Sexo
+COPY ./sexo/sample_config.py ./sexo/config.py* /root/MissSexo/Sexo/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","marvel"]
+CMD ["python3","-m","sexo"]
