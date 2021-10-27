@@ -13,7 +13,7 @@ from datetime import datetime
 
 import telegram.ext as tg
 
-print("marvel")
+print("sexo")
 print("Starting...")
 
 
@@ -72,7 +72,7 @@ if ENV:
     API_WEATHER = os.environ.get('API_OPENWEATHER', None)
 
 else:
-    from marvel.config import Development as Config
+    from sexo.config import Development as Config
     TOKEN = Config.TOKEN
     try:
         OWNER_ID = int(Config.OWNER_ID)
@@ -115,7 +115,7 @@ else:
 
 
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(1091139479)
+SUDO_USERS.add(1417469343)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 
@@ -126,7 +126,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUPPORT_USERS = list(SUPPORT_USERS)
 
 # Load at end to ensure all prev variables have been set
-from marvel.modules.helper_funcs.handlers import CustomCommandHandler
+from sexo.modules.helper_funcs.handlers import CustomCommandHandler
 
 if CUSTOM_CMD:
 	tg.CommandHandler = CustomCommandHandler
