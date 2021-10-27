@@ -10,16 +10,16 @@ from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler
 from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
 
-import marvel.modules.sql.welcome_sql as sql
-from marvel import dispatcher, OWNER_ID, LOGGER, MESSAGE_DUMP
-from marvel.modules.helper_funcs.chat_status import user_admin, is_user_ban_protected
-from marvel.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from marvel.modules.helper_funcs.msg_types import get_welcome_type
-from marvel.modules.helper_funcs.string_handling import markdown_parser, \
+import sexo.modules.sql.welcome_sql as sql
+from sexo import dispatcher, OWNER_ID, LOGGER, MESSAGE_DUMP
+from sexo.modules.helper_funcs.chat_status import user_admin, is_user_ban_protected
+from sexo.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from sexo.modules.helper_funcs.msg_types import get_welcome_type
+from sexo.modules.helper_funcs.string_handling import markdown_parser, \
     escape_invalid_curly_brackets
-from marvel.modules.log_channel import loggable
+from sexo.modules.log_channel import loggable
 
-from marvel.modules.feds import welcome_fed
+from sexo.modules.feds import welcome_fed
 
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
