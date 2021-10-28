@@ -14,9 +14,9 @@ from typing import Optional
 from telegram import User, Chat, ChatMember, Update, Bot
 from telegram import error
 
-from marvel import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
+from sexo import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
 
-from marvel.modules import translations
+from sexo.modules import translations
 
 
 def send_message(message, text,  *args,**kwargs):
