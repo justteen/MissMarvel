@@ -11,8 +11,8 @@ from functools import wraps
 from telegram import MAX_MESSAGE_LENGTH, InlineKeyboardButton, Bot, ParseMode
 from telegram.error import TelegramError
 
-from marvel import LOAD, NO_LOAD
-from marvel.modules.translations.strings import tld
+from sexo import LOAD, NO_LOAD
+from sexo.modules.translations.strings import tld
 from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
 
 
