@@ -99,7 +99,7 @@ async def deepfry(img: Image, *, token: str=None, url_base: str='westcentralus',
     elif type == DeepfryTypes.BLUE:
         r = ImageOps.colorize(r, Colours.BLUE, Colours.WHITE)
 
-    # Overlay red and yellow onto main image and sharpen the hell out of it
+    # Overlay red and yellow onto main image and sharpen the hell out of it [NOTHING TO EDIT HERE]
     img = Image.blend(img, r, 0.75)
     img = ImageEnhance.Sharpness(img).enhance(100.0)
 
