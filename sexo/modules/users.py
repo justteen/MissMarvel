@@ -18,13 +18,13 @@ from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler
 from telegram.ext.dispatcher import run_async
 
-import marvel.modules.sql.users_sql as sql
-from marvel import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
+import sexo.modules.sql.users_sql as sql
+from sexo import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS
 from telegram.utils.helpers import escape_markdown
-from marvel.modules.helper_funcs.filters import CustomFilters
-from marvel.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
+from sexo.modules.helper_funcs.filters import CustomFilters
+from sexo.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 USERS_GROUP = 4
 
