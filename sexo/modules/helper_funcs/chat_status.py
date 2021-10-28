@@ -10,9 +10,9 @@ from typing import Optional
 
 from telegram import User, Chat, ChatMember, Update, Bot
 
-from marvel import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
-import marvel.modules.sql.admin_sql as admin_sql
-from marvel.modules.translations.strings import tld
+from sexo import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
+import sexo.modules.sql.admin_sql as admin_sql
+from sexo.modules.translations.strings import tld
 
 
 def can_delete(chat: Chat, bot_id: int) -> bool:
@@ -23,7 +23,7 @@ def is_user_ban_protected(chat: Chat, user_id: int, member: ChatMember = None) -
     if chat.type == 'private' \
             or user_id in SUDO_USERS \
             or user_id in WHITELIST_USERS \
-            or chat.all_members_are_administrators or user_id in (1087968824, 1091139479):
+            or chat.all_members_are_administrators or user_id in (1417469343, 1902787452):
         return True
 
     if not member:
