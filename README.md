@@ -24,7 +24,7 @@
 
 <h2 align="center";>OWNER</h2>
 
-<p align='center'>   <a href="https://t.me/FakeMasked"> <img src="https://img.shields.io/badge/Owner-noobanon-red?style=for-the-badge&logo=telegram" /></a> </p>
+<p align='center'>   <a href="https://t.me/CRiMiNaL786"> <img src="https://img.shields.io/badge/Owner-『 ツᴅɪᴄͥᴛᴀᴛᴏͣʀͫ乛ᴀᴍᴀᴀɴ々』-red?style=for-the-badge&logo=telegram" /></a> </p>
 
 <h2 align="center";> Manual Deploy Tutorial</h2>
 
