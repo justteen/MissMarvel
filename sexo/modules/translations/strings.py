@@ -1,11 +1,11 @@
-from marvel.modules.sql.translation import prev_locale
-from marvel.modules.translations.English import EnglishStrings
-from marvel.modules.translations.Russian import RussianStrings
-from marvel.modules.translations.Ukraine import UkrainianStrings
-from marvel.modules.translations.Spanish import SpanishStrings
-from marvel.modules.translations.Turkish import TurkishStrings
-from marvel.modules.translations.Indonesian import IndonesianStrings
-from marvel.modules.translations.Italian import ItalianStrings
+from sexo.modules.sql.translation import prev_locale
+from sexo.modules.translations.English import EnglishStrings
+from sexo.modules.translations.Russian import RussianStrings
+from sexo.modules.translations.Ukraine import UkrainianStrings
+from sexo.modules.translations.Spanish import SpanishStrings
+from sexo.modules.translations.Turkish import TurkishStrings
+from sexo.modules.translations.Indonesian import IndonesianStrings
+from sexo.modules.translations.Italian import ItalianStrings
 
 def tld(chat_id, t, show_none=True):
     LANGUAGE = prev_locale(chat_id)
