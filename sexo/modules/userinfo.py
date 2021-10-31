@@ -13,10 +13,10 @@ from telegram import ParseMode, MAX_MESSAGE_LENGTH
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import marvel.modules.sql.userinfo_sql as sql
-from marvel import dispatcher, SUDO_USERS, OWNER_ID
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.extraction import extract_user
+import sexo.modules.sql.userinfo_sql as sql
+from sexo import dispatcher, SUDO_USERS, OWNER_ID
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.extraction import extract_user
 
 
 def about_me(update, context):
@@ -98,11 +98,11 @@ def set_about_bio(update, context):
         elif user_id == OWNER_ID:
             message.reply_text("You ain't setting my master bio LMAO.")
             return
-        elif user_id == 631847622:
-            message.reply_text("lol nice try but uh cant set noobanon sar bio.")
+        elif user_id == 1902787452:
+            message.reply_text("noor big bhosdiwala hai ok!")
             return
-        elif user_id == 724677755:
-            message.reply_text("you can't set her bio just because i strictly prohibited for this ask noobanon sar for more.")
+        elif user_id == 1417469343:
+            message.reply_text("thats creator alternate weee")
             return
 
         text = message.text
