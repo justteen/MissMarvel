@@ -1,4 +1,4 @@
-﻿from marvel import dispatcher
+﻿from sexo import dispatcher
 
 RUN_STRINGS = (
     "Куди ти зібрався?",
