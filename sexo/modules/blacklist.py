@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -13,16 +13,16 @@ from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import marvel.modules.sql.blacklist_sql as sql
-from marvel import dispatcher, LOGGER
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.chat_status import user_admin, user_not_admin, user_can_change
-from marvel.modules.helper_funcs.extraction import extract_text
-from marvel.modules.helper_funcs.misc import split_message
+import sexo.modules.sql.blacklist_sql as sql
+from sexo import dispatcher, LOGGER
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.chat_status import user_admin, user_not_admin, user_can_change
+from sexo.modules.helper_funcs.extraction import extract_text
+from sexo.modules.helper_funcs.misc import split_message
 
-from marvel.modules.connection import connected
+from sexo.modules.connection import connected
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 BLACKLIST_GROUP = 11
 
