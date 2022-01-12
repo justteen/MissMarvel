@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -8,9 +8,9 @@
 from telegram import Message, User, Bot, Update, ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 
-from marvel import dispatcher, OWNER_ID
+from sexo import dispatcher, OWNER_ID
 
-import marvel.modules.sql.blacklistusers_sql as sql
+import sexo.modules.sql.blacklistusers_sql as sql
 
 
 def bl_user(update, context):
