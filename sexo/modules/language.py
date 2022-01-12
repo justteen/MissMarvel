@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -6,17 +6,17 @@
 #PTB13 Updated by @noobanon
 
 
-from marvel.modules.sql.translation import switch_to_locale, prev_locale
-from marvel.modules.translations.strings import tld
+from sexo.modules.sql.translation import switch_to_locale, prev_locale
+from sexo.modules.translations.strings import tld
 from telegram.ext import CommandHandler
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
-from marvel import dispatcher
-from marvel.modules.translations.list_locale import list_locales
-from marvel.modules.helper_funcs.chat_status import user_admin
+from sexo import dispatcher
+from sexo.modules.translations.list_locale import list_locales
+from sexo.modules.helper_funcs.chat_status import user_admin
 from telegram.ext import CallbackQueryHandler
 import re
 
-from marvel.modules.connection import connected
+from sexo.modules.connection import connected
 
 
 @user_admin
