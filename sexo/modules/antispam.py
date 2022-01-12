@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -15,15 +15,15 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import marvel.modules.sql.antispam_sql as sql
-from marvel import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_ANTISPAM
-from marvel.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from marvel.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from marvel.modules.helper_funcs.filters import CustomFilters
-from marvel.modules.helper_funcs.misc import send_to_list
-from marvel.modules.sql.users_sql import get_all_chats
+import sexo.modules.sql.antispam_sql as sql
+from sexo import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, STRICT_ANTISPAM
+from sexo.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from sexo.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from sexo.modules.helper_funcs.filters import CustomFilters
+from sexo.modules.helper_funcs.misc import send_to_list
+from sexo.modules.sql.users_sql import get_all_chats
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 GBAN_ENFORCE_GROUP = 6
 
