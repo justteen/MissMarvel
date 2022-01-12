@@ -19,6 +19,7 @@ from pythonping import ping as ping3
 from typing import Optional, List
 from PyLyrics import *
 from hurry.filesize import size
+#from sylviorus import SYL
 
 import requests
 from telegram import Message, Chat, Update, Bot, MessageEntity
@@ -26,17 +27,17 @@ from telegram import ParseMode, ReplyKeyboardRemove, ReplyKeyboardMarkup, Inline
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from marvel import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
-from marvel.__main__ import STATS, USER_INFO
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.extraction import extract_user
-from marvel.modules.helper_funcs.filters import CustomFilters
-from marvel.modules.rextester.api import Rextester, CompilerError
-from marvel.modules.rextester.langs import languages
+from sexo import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
+from sexo.__main__ import STATS, USER_INFO
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.extraction import extract_user
+from sexo.modules.helper_funcs.filters import CustomFilters
+from sexo.modules.rextester.api import Rextester, CompilerError
+from sexo.modules.rextester.langs import languages
 
-from marvel.modules.sql.translation import prev_locale
+from sexo.modules.sql.translation import prev_locale
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 from requests import get
 
@@ -203,7 +204,20 @@ def info(update, context):
             if user.id in WHITELIST_USERS:
                 text += tld(chat.id, "\nThis person has been whitelisted! " \
                         "That means I'm not allowed to ban/kick them.")
-
+"""
+#try:
+        sylban = SYL()
+        spamer = sylban.get_info(int(user.id))
+        if spamer.blacklisted != False:
+            text += "\n\n<b>This person is banned on Sylviorus!</b>"
+            text += f"\nReason: <pre>{spamer.reason}</pre>"
+            text += "\nAppeal at @Sylviorus_Support"
+        else:
+            pass
+    except:
+        pass  # don't crash if api is down somehow...
+   """ 
+    
     for mod in USER_INFO:
         try:
             mod_info = mod.__user_info__(user.id).strip()
