@@ -15,16 +15,16 @@ from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 from telegram import ParseMode
 
-from marvel import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
+from sexo import dispatcher, BAN_STICKER, LOGGER, OWNER_ID
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
     is_user_admin, is_user_in_chat, is_bot_admin, can_delete, user_can_ban
-from marvel.modules.helper_funcs.extraction import extract_user_and_text
-from marvel.modules.helper_funcs.string_handling import extract_time
-from marvel.modules.log_channel import loggable
-from marvel.modules.helper_funcs.filters import CustomFilters
+from sexo.modules.helper_funcs.extraction import extract_user_and_text
+from sexo.modules.helper_funcs.string_handling import extract_time
+from sexo.modules.log_channel import loggable
+from sexo.modules.helper_funcs.filters import CustomFilters
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 
 @bot_admin
