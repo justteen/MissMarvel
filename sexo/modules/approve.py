@@ -1,16 +1,16 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
 #software and other kinds of works.
 #PTB13 Updated by @noobanon
 
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel import dispatcher, SUDO_USERS
-from marvel.modules.helper_funcs.extraction import extract_user
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo import dispatcher, SUDO_USERS
+from sexo.modules.helper_funcs.extraction import extract_user
 from telegram.ext import run_async, CallbackQueryHandler
-import marvel.modules.sql.approve_sql as sql
-from marvel.modules.helper_funcs.chat_status import bot_admin, user_admin, user_can_promote
+import sexo.modules.sql.approve_sql as sql
+from sexo.modules.helper_funcs.chat_status import bot_admin, user_admin, user_can_promote
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import Update, Bot, Message, Chat, User
 from typing import Optional, List
