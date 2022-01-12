@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -20,9 +20,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import escape_markdown
 
-from marvel import dispatcher
+from sexo import dispatcher
 
-from marvel.modules.disable import DisableAbleCommandHandler
+from sexo.modules.disable import DisableAbleCommandHandler
 
 
 def stickerid(update, context):
