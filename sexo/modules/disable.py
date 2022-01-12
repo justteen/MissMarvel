@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -12,22 +12,22 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity
 from telegram.ext import CommandHandler, Filters, MessageHandler, Filters
 from telegram.utils.helpers import escape_markdown
 
-from marvel import dispatcher
-from marvel.modules.helper_funcs.handlers import CMD_STARTERS
-from marvel.modules.helper_funcs.misc import is_module_loaded
+from sexo import dispatcher
+from sexo.modules.helper_funcs.handlers import CMD_STARTERS
+from sexo.modules.helper_funcs.misc import is_module_loaded
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
-from marvel.modules.connection import connected
+from sexo.modules.connection import connected
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
 # If module is due to be loaded, then setup all the magical handlers
 if is_module_loaded(FILENAME):
-    from marvel.modules.helper_funcs.chat_status import user_admin, is_user_admin
+    from sexo.modules.helper_funcs.chat_status import user_admin, is_user_admin
     from telegram.ext.dispatcher import run_async
 
-    from marvel.modules.sql import disable_sql as sql
+    from sexo.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
