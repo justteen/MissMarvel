@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -15,20 +15,20 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async, CallbackQueryHandler, Filters
 from telegram.utils.helpers import escape_markdown, mention_markdown
 
-from marvel import dispatcher, LOGGER, OWNER_ID, SUDO_USERS
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.chat_status import user_admin
-from marvel.modules.helper_funcs.extraction import extract_text
-from marvel.modules.helper_funcs.filters import CustomFilters
-from marvel.modules.helper_funcs.misc import build_keyboard_parser
-from marvel.modules.helper_funcs.msg_types import get_filter_type
-from marvel.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser, escape_invalid_curly_brackets
-from marvel.modules.sql import cust_filters_sql as sql
+from sexo import dispatcher, LOGGER, OWNER_ID, SUDO_USERS
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.chat_status import user_admin
+from sexo.modules.helper_funcs.extraction import extract_text
+from sexo.modules.helper_funcs.filters import CustomFilters
+from sexo.modules.helper_funcs.misc import build_keyboard_parser
+from sexo.modules.helper_funcs.msg_types import get_filter_type
+from sexo.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser, escape_invalid_curly_brackets
+from sexo.modules.sql import cust_filters_sql as sql
 
-from marvel.modules.connection import connected
+from sexo.modules.connection import connected
 
-from marvel.modules.translations.strings import tld
-from marvel.modules.helper_funcs.alternate import send_message
+from sexo.modules.translations.strings import tld
+from sexo.modules.helper_funcs.alternate import send_message
 
 HANDLER_GROUP = 10
 
