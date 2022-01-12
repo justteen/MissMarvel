@@ -6,14 +6,21 @@
 #PTB13 Updated by @noobanon
 
 from functools import wraps
+from time import perf_counter
 from typing import Optional
-
+from cachetools import TTLCache	
+from threading import RLock
 from telegram import User, Chat, ChatMember, Update, Bot
 
 from sexo import DEL_CMDS, SUDO_USERS, WHITELIST_USERS
 import sexo.modules.sql.admin_sql as admin_sql
 from sexo.modules.translations.strings import tld
 
+from sexo.mwt import MWT
+
+# stores admemes in memory for 10 min.	
+ADMIN_CACHE = TTLCache(maxsize=512, ttl=60 * 10, timer=perf_counter)	
+THREAD_LOCK = RLock()
 
 def can_delete(chat: Chat, bot_id: int) -> bool:
     return chat.get_member(bot_id).can_delete_messages
