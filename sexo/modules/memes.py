@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -26,8 +26,8 @@ from telegram import MessageEntity
 from telegram.ext import Filters, MessageHandler, run_async
 from deeppyer import deepfry
 
-from marvel import dispatcher
-from marvel.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from sexo import dispatcher
+from sexo.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 
 WIDE_MAP = dict((i, i + 0xFEE0) for i in range(0x21, 0x7F))
 WIDE_MAP[0x20] = 0x3000
