@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Boolean, Integer
 
-from marvel.modules.sql import BASE, SESSION
+from sexo.modules.sql import BASE, SESSION
 
 
 class AFK(BASE):
