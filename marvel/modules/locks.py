@@ -16,16 +16,16 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import marvel.modules.sql.locks_sql as sql
-from marvel import dispatcher, SUDO_USERS, LOGGER
-from marvel.modules.disable import DisableAbleCommandHandler
-from marvel.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
+import sexo.modules.sql.locks_sql as sql
+from sexo import dispatcher, SUDO_USERS, LOGGER
+from sexo.modules.disable import DisableAbleCommandHandler
+from sexo.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
     bot_can_delete, is_bot_admin, user_can_change
-from marvel.modules.log_channel import loggable
-from marvel.modules.sql import users_sql
-from marvel.modules.sql.approve_sql import is_approved
+from sexo.modules.log_channel import loggable
+from sexo.modules.sql import users_sql
+from sexo.modules.sql.approve_sql import is_approved
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 LOCK_TYPES = {'sticker': Filters.sticker,
               'audio': Filters.audio,
