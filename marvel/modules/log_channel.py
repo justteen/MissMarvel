@@ -1,4 +1,4 @@
-﻿#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
+#Copyright (C) 2021 Free Software @noobanon @FakeMasked , Inc.[ https://t.me/noobanon https://t.me/FakeMasked ]
 #Everyone is permitted to copy and distribute verbatim copies
 #of this license document, but changing it is not allowed.
 #The GNGeneral Public License is a free, copyleft license for
@@ -8,9 +8,9 @@
 from functools import wraps
 from typing import Optional
 
-from marvel.modules.helper_funcs.misc import is_module_loaded
+from sexo.modules.helper_funcs.misc import is_module_loaded
 
-from marvel.modules.translations.strings import tld
+from sexo.modules.translations.strings import tld
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -20,9 +20,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from marvel import dispatcher, LOGGER
-    from marvel.modules.helper_funcs.chat_status import user_admin
-    from marvel.modules.sql import log_channel_sql as sql
+    from sexo import dispatcher, LOGGER
+    from sexo.modules.helper_funcs.chat_status import user_admin
+    from sexo.modules.sql import log_channel_sql as sql
 
 
     def loggable(func):
