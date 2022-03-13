@@ -16,7 +16,7 @@ class Config(object):
     TOKEN = '1306525471:AAEu2agIza0S8FNr9cLjvslhB9oLkhcjVlE'
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgres://pwbjkedt:yHtCdpZsk8IzHvS3nt3MRXWtnC9bid0m@satao.db.elephantsql.com/pwbjkedt'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://omijxjaa:r27--XeyA7A6Iv4rljAs4WRr68rH1zpw@satao.db.elephantsql.com/omijxjaa'  # needed for any database modules
     MESSAGE_DUMP = '' # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation']
